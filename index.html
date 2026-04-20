@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7290-054 Short Answer Questions</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #f5f4f0;
+    color: #1a1a1a;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 40px 48px 60px;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 8px; }
+    .page { padding: 20px 18px 40px; }
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-family: Arial, sans-serif;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    font-family: Arial, sans-serif;
+  }
+
+  .cover-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 18px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+  }
+
+  .cover-table td {
+    border: 1px solid #888;
+    padding: 8px 10px;
+    vertical-align: top;
+  }
+
+  .cover-table td:first-child {
+    font-weight: bold;
+    width: 38%;
+    background: #f0f0f0;
+  }
+
+  .cover-table input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    background: transparent;
+  }
+
+  .cover-table .tick-row td {
+    padding: 8px 10px;
+  }
+
+  .tick-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 24px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+  }
+
+  .tick-label input[type="checkbox"] {
+    width: 16px; height: 16px;
+    cursor: pointer;
+  }
+
+  .intro-text {
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 22px;
+    font-style: italic;
+    color: #333;
+  }
+
+  .section-header {
+    background: #d4d4d4;
+    border: 1px solid #888;
+    border-bottom: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+  }
+
+  .section-desc {
+    background: #e8e8e8;
+    border: 1px solid #888;
+    border-top: none;
+    border-bottom: none;
+    padding: 6px 12px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+  }
+
+  .question-block {
+    border: 1px solid #888;
+    margin-bottom: 0;
+  }
+
+  .question-block + .question-block {
+    border-top: none;
+  }
+
+  .section-header + .question-block,
+  .section-desc + .question-block {
+    border-top: none;
+  }
+
+  .question-label {
+    background: #e8e8e8;
+    padding: 7px 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .question-text {
+    padding: 10px 12px 8px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    border-bottom: 1px solid #aaa;
+    line-height: 1.5;
+  }
+
+  .question-text strong { font-weight: bold; }
+
+  .response-label {
+    background: #f0f0f0;
+    padding: 6px 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .response-area {
+    padding: 10px 12px 6px;
+  }
+
+  .answer-line-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 2px;
+    display: block;
+    margin-top: 8px;
+  }
+
+  .answer-line-label:first-child { margin-top: 0; }
+
+  textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #888;
+    resize: none;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #1a1a1a;
+    background: transparent;
+    padding: 4px 0;
+    line-height: 1.6;
+    display: block;
+    overflow: hidden;
+  }
+
+  .answer-inputs input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #888;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #1a1a1a;
+    background: transparent;
+    padding: 4px 0;
+    margin-top: 2px;
+    display: block;
+  }
+
+  .screwdriver-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+    margin: 8px 0 4px;
+  }
+
+  .screwdriver-item {
+    text-align: center;
+  }
+
+  .screwdriver-item .icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .screwdriver-item .num {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: block;
+    margin-bottom: 4px;
+    color: #333;
+  }
+
+  .screwdriver-item input[type="text"] {
+    width: 100%;
+    border: 1px solid #aaa;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #1a1a1a;
+    background: #fff;
+    padding: 3px 4px;
+    text-align: center;
+  }
+
+  .tool-image {
+    font-size: 40px;
+    margin: 6px 0 4px;
+    display: block;
+  }
+
+  .ohm-draw-area {
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 160px;
+    cursor: crosshair;
+    background: #fafafa;
+    display: block;
+    touch-action: none;
+  }
+
+  .draw-clear {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    background: #e8e8e8;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    padding: 3px 10px;
+    margin-top: 4px;
+  }
+
+  .progress-bar-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+    padding: 8px 48px;
+    margin: -40px -48px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  @media (max-width: 600px) {
+    .progress-bar-wrap { padding: 8px 18px; margin: -20px -18px 18px; }
+  }
+
+  .progress-bar-bg {
+    flex: 1;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background: #1a6b3a;
+    border-radius: 4px;
+    transition: width 0.3s;
+    width: 0%;
+  }
+
+  .progress-text {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #555;
+    min-width: 80px;
+    text-align: right;
+  }
+
+  .spacer { height: 20px; }
+
+  .final-block {
+    border: 1px solid #888;
+    margin-top: 24px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+  }
+
+  .final-block .row {
+    display: flex;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .final-block .row:last-child { border-bottom: none; }
+
+  .final-block .cell {
+    padding: 9px 12px;
+    flex: 1;
+    border-right: 1px solid #aaa;
+  }
+
+  .final-block .cell:last-child { border-right: none; }
+
+  .final-block .cell.label { font-weight: bold; background: #f0f0f0; max-width: 200px; }
+
+  .final-block input[type="text"] {
+    border: none; border-bottom: 1px solid #888;
+    outline: none; width: 100%;
+    font-family: Arial, sans-serif; font-size: 13px;
+    background: transparent;
+  }
+
+  .save-btn {
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    padding: 13px;
+    background: #1a5c38;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+  }
+
+  .save-btn:hover { background: #144d2f; }
+
+  .footer-note {
+    margin-top: 12px;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: #888;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="progress-bar-wrap">
+    <div class="progress-bar-bg"><div class="progress-bar-fill" id="progressFill"></div></div>
+    <div class="progress-text" id="progressText">0 answered</div>
+  </div>
+
+  <h1>7290-054: Short Answer Questions Recording Form</h1>
+  <div class="subtitle">Assignment: Knowledge of Materials, Fabrication, Tools and Measuring Devices Used in the Automotive Environment</div>
+
+  <table class="cover-table">
+    <tr>
+      <td>Candidate name</td>
+      <td><input type="text" placeholder="Enter full name" class="tracked"></td>
+      <td style="font-weight:bold;background:#f0f0f0;width:30%">Candidate number</td>
+      <td><input type="text" placeholder="" class="tracked"></td>
+    </tr>
+    <tr>
+      <td>Assessment title</td>
+      <td><input type="text" placeholder="" class="tracked"></td>
+      <td style="font-weight:bold;background:#f0f0f0">Date of assessment</td>
+      <td><input type="date" class="tracked" style="font-family:Arial,sans-serif;font-size:13px;border:none;outline:none;width:100%;background:transparent;"></td>
+    </tr>
+    <tr>
+      <td>Assessor name</td>
+      <td><input type="text" placeholder="" class="tracked"></td>
+      <td style="font-weight:bold;background:#f0f0f0">Start and finish time</td>
+      <td><input type="text" placeholder="e.g. 09:00 – 10:30" class="tracked"></td>
+    </tr>
+    <tr class="tick-row">
+      <td>Assessment administered (please tick method applied)</td>
+      <td colspan="3">
+        <label class="tick-label"><input type="checkbox"> Written</label>
+        <label class="tick-label"><input type="checkbox"> Oral</label>
+      </td>
+    </tr>
+  </table>
+
+  <p class="intro-text">Candidates must demonstrate the knowledge and understanding required to work competently in the occupational area.</p>
+
+  <!-- ===== SECTION 1 ===== -->
+  <div class="section-header">Section 1</div>
+  <div class="section-desc">Types of tools</div>
+
+  <!-- S1 Q1 -->
+  <div class="question-block">
+    <div class="question-label">Question 1</div>
+    <div class="question-text">Q: Name <strong>three</strong> types of hand files used in the workshop.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">1</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">2</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">3</span><input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S1 Q2 -->
+  <div class="question-block">
+    <div class="question-label">Question 2</div>
+    <div class="question-text">Q: What is the name of the drill bit used before drilling the main hole?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="3" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S1 Q3 -->
+  <div class="question-block">
+    <div class="question-label">Question 3</div>
+    <div class="question-text">Q: Which way should the teeth face on a hacksaw?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S1 Q4 -->
+  <div class="question-block">
+    <div class="question-label">Question 4</div>
+    <div class="question-text">Q: What is a thread tap used for?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S1 Q5 -->
+  <div class="question-block">
+    <div class="question-label">Question 5</div>
+    <div class="question-text">Q: State <strong>one</strong> safety precaution when using a ball pein hammer.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S1 Q6 -->
+  <div class="question-block">
+    <div class="question-label">Question 6</div>
+    <div class="question-text">Q: What is a thread die used for?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S1 Q7 -->
+  <div class="question-block">
+    <div class="question-label">Question 7</div>
+    <div class="question-text">Q: What is an 'easy-out' and what would it be used for?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S1 Q8 — Screwdriver identification -->
+  <div class="question-block">
+    <div class="question-label">Question 8</div>
+    <div class="question-text">Q: Identify the screwdriver types shown below (1–6):</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <div class="screwdriver-grid">
+        <div class="screwdriver-item"><span class="icon">&#8722;</span><span class="num">1</span><input type="text" class="tracked" placeholder="Type..."></div>
+        <div class="screwdriver-item"><span class="icon">&#10010;</span><span class="num">2</span><input type="text" class="tracked" placeholder="Type..."></div>
+        <div class="screwdriver-item"><span class="icon">&#10010;</span><span class="num">3</span><input type="text" class="tracked" placeholder="Type..."></div>
+        <div class="screwdriver-item"><span class="icon">&#9632;</span><span class="num">4</span><input type="text" class="tracked" placeholder="Type..."></div>
+        <div class="screwdriver-item"><span class="icon">&#11045;</span><span class="num">5</span><input type="text" class="tracked" placeholder="Type..."></div>
+        <div class="screwdriver-item"><span class="icon">&#10040;</span><span class="num">6</span><input type="text" class="tracked" placeholder="Type..."></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S1 Q9 -->
+  <div class="question-block">
+    <div class="question-label">Question 9</div>
+    <div class="question-text">Q: State <strong>three</strong> tools used for marking out metal prior to cutting, filing or drilling.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">1</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">2</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">3</span><input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S1 Q10 -->
+  <div class="question-block">
+    <div class="question-label">Question 10</div>
+    <div class="question-text">Q: List <strong>three</strong> different types of pliers.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">1</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">2</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">3</span><input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S1 Q11 -->
+  <div class="question-block">
+    <div class="question-label">Question 11</div>
+    <div class="question-text">Q: How should tools be cared for and stored after use?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="5" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S1 Q12 -->
+  <div class="question-block">
+    <div class="question-label">Question 12</div>
+    <div class="question-text">Q: Name <strong>three</strong> spanner types commonly used in the workshop.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">1</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">2</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">3</span><input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S1 Q13 -->
+  <div class="question-block">
+    <div class="question-label">Question 13</div>
+    <div class="question-text">Q: When would a centre punch be used?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- ===== SECTION 2 ===== -->
+  <div class="section-header">Section 2</div>
+  <div class="section-desc">Types of measuring devices used for fabrication, fitting and electrical testing in the automotive environment</div>
+
+  <!-- S2 Q1 — Micrometer -->
+  <div class="question-block">
+    <div class="question-label">Question 1</div>
+    <div class="question-text">Q: Name the tool shown (micrometer) and state an example of its use.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">Name of tool:</span>
+      <input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">One example of use:</span>
+      <input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S2 Q2 — Multimeter / Ohm's Law -->
+  <div class="question-block">
+    <div class="question-label">Question 2</div>
+    <div class="question-text">Q: Name the tool shown (multimeter) and the three units of measurements when using Ohm's Law for calculations.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">Name of tool:</span>
+      <input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">Three units of measurements:</span>
+      <span class="answer-line-label">1</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">2</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">3</span><input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S2 Q3 — Ruler -->
+  <div class="question-block">
+    <div class="question-label">Question 3</div>
+    <div class="question-text">Q: Name the tool shown (steel rule) and state what is the minimum measurement it can read.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">Name of tool:</span>
+      <input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">Minimum measurement:</span>
+      <input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S2 Q4 — Ohm's Law diagram -->
+  <div class="question-block">
+    <div class="question-label">Question 4</div>
+    <div class="question-text">Q: Draw the diagram used for remembering Ohm's Law.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <canvas class="ohm-draw-area" id="ohmCanvas" width="700" height="160"></canvas>
+      <button class="draw-clear" onclick="clearCanvas()">Clear drawing</button>
+    </div>
+  </div>
+
+  <!-- S2 Q5 — Feeler gauge -->
+  <div class="question-block">
+    <div class="question-label">Question 5</div>
+    <div class="question-text">Q: Name the tool shown (feeler gauge) and state <strong>one</strong> example of its use.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">Name of tool:</span>
+      <input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">One example of use:</span>
+      <input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S2 Q6 — Engine crane -->
+  <div class="question-block">
+    <div class="question-label">Question 6</div>
+    <div class="question-text">Q: Name the tool shown (engine crane / hoist) and describe what it is used for.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">Name of tool:</span>
+      <input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">Describe use:</span>
+      <input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S2 Q7 — Dial test indicator -->
+  <div class="question-block">
+    <div class="question-label">Question 7</div>
+    <div class="question-text">Q: Name the tool shown (dial test indicator / DTI) and state <strong>one</strong> example of its use.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">Name of tool:</span>
+      <input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">One example of use:</span>
+      <input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S2 Q8 — SWL -->
+  <div class="question-block">
+    <div class="question-label">Question 8</div>
+    <div class="question-text">Q: What do the letters SWL stand for?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="3" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S2 Q9 — Tap wrench / T-bar -->
+  <div class="question-block">
+    <div class="question-label">Question 9</div>
+    <div class="question-text">Q: Name the tool shown (tap wrench) and state an example of its use.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">Name of tool:</span>
+      <input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">One example of use:</span>
+      <input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S2 Q10 — Two post ramp -->
+  <div class="question-block">
+    <div class="question-label">Question 10</div>
+    <div class="question-text">Q: State the <strong>main</strong> safety checks to carry out before use on a two post ramp.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="5" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S2 Q11 — Carjack -->
+  <div class="question-block">
+    <div class="question-label">Question 11</div>
+    <div class="question-text">Q: State the <strong>main</strong> safety checks that should be carried out before using a carjack.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="5" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- ===== SECTION 3 ===== -->
+  <div class="section-header">Section 3</div>
+  <div class="section-desc">Properties, application and limitations (to include safe use) of ferrous and non-ferrous metals used when constructing, modifying and repairing vehicles and components.</div>
+
+  <!-- S3 Q1 -->
+  <div class="question-block">
+    <div class="question-label">Question 1</div>
+    <div class="question-text">Q: Where on a motor vehicle would low carbon steel be used?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S3 Q2 -->
+  <div class="question-block">
+    <div class="question-label">Question 2</div>
+    <div class="question-text">Q: Describe the properties of low carbon steel.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S3 Q3 -->
+  <div class="question-block">
+    <div class="question-label">Question 3</div>
+    <div class="question-text">Q: Where on a motor vehicle would cast iron be used?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S3 Q4 -->
+  <div class="question-block">
+    <div class="question-label">Question 4</div>
+    <div class="question-text">Q: Describe the properties of cast iron.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S3 Q5 -->
+  <div class="question-block">
+    <div class="question-label">Question 5</div>
+    <div class="question-text">Q: Where on a motor vehicle would Acrylonitrile Butadiene Styrene (ABS) be used?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S3 Q6 -->
+  <div class="question-block">
+    <div class="question-label">Question 6</div>
+    <div class="question-text">Q: Describe the properties of ABS plastic.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S3 Q7 -->
+  <div class="question-block">
+    <div class="question-label">Question 7</div>
+    <div class="question-text">Q: Where on a motor vehicle would copper be used?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S3 Q8 -->
+  <div class="question-block">
+    <div class="question-label">Question 8</div>
+    <div class="question-text">Q: Describe the properties of copper.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- ===== SECTION 4 ===== -->
+  <div class="section-header">Section 4</div>
+  <div class="section-desc">Properties, application and limitations of non-metallic materials used when constructing, modifying and repairing vehicles and components.</div>
+
+  <!-- S4 Q1 -->
+  <div class="question-block">
+    <div class="question-label">Question 1</div>
+    <div class="question-text">Q: State the <strong>two</strong> types of glass normally used on modern vehicles.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">1</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">2</span><input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S4 Q2 -->
+  <div class="question-block">
+    <div class="question-label">Question 2</div>
+    <div class="question-text">Q: Where on a vehicle could Glass Reinforced Plastic (GRP) be used?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S4 Q3 -->
+  <div class="question-block">
+    <div class="question-label">Question 3</div>
+    <div class="question-text">Q: Where on a motor vehicle could carbon fibre be used?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S4 Q4 -->
+  <div class="question-block">
+    <div class="question-label">Question 4</div>
+    <div class="question-text">Q: What is GRP made up of?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="3" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S4 Q5 -->
+  <div class="question-block">
+    <div class="question-label">Question 5</div>
+    <div class="question-text">Q: What are the properties of carbon fibre?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S4 Q6 -->
+  <div class="question-block">
+    <div class="question-label">Question 6</div>
+    <div class="question-text">Q: One use of rubber on a vehicle is for tyres; where else can it be used on a vehicle?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S4 Q7 -->
+  <div class="question-block">
+    <div class="question-label">Question 7</div>
+    <div class="question-text">Q: Where on a motor vehicle could Kevlar be used?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S4 Q8 -->
+  <div class="question-block">
+    <div class="question-label">Question 8</div>
+    <div class="question-text">Q: State the main safety precautions when using GRP, glues and adhesives.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="5" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S4 Q9 -->
+  <div class="question-block">
+    <div class="question-label">Question 9</div>
+    <div class="question-text">Q: What happens to rubber with age?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S4 Q10 -->
+  <div class="question-block">
+    <div class="question-label">Question 10</div>
+    <div class="question-text">Q: What are the properties of Kevlar?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S4 Q11 -->
+  <div class="question-block">
+    <div class="question-label">Question 11</div>
+    <div class="question-text">Q: What is a <strong>typical</strong> shelf life of a vehicle tyre?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="3" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- ===== SECTION 5 ===== -->
+  <div class="section-header">Section 5</div>
+  <div class="section-desc"><strong>Terms in connection with the properties of materials.</strong></div>
+
+  <!-- S5 Q1 -->
+  <div class="question-block">
+    <div class="question-label">Question 1</div>
+    <div class="question-text">Q: Name a type of metal, used in the construction of motor vehicles, which is very <strong>hard</strong>.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S5 Q2 -->
+  <div class="question-block">
+    <div class="question-label">Question 2</div>
+    <div class="question-text">Q: State <strong>two</strong> uses of this metal on a motor vehicle.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area answer-inputs">
+      <span class="answer-line-label">1</span><input type="text" class="tracked" placeholder="">
+      <span class="answer-line-label">2</span><input type="text" class="tracked" placeholder="">
+    </div>
+  </div>
+
+  <!-- S5 Q3 -->
+  <div class="question-block">
+    <div class="question-label">Question 3</div>
+    <div class="question-text">Q: What does the term <strong>malleability</strong> mean in relation to materials?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S5 Q4 -->
+  <div class="question-block">
+    <div class="question-label">Question 4</div>
+    <div class="question-text">Q: Give <strong>one</strong> example of the use of a material that has good malleability properties.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S5 Q5 -->
+  <div class="question-block">
+    <div class="question-label">Question 5</div>
+    <div class="question-text">Q: State a simple test to check for metal <strong>hardness</strong>.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S5 Q6 -->
+  <div class="question-block">
+    <div class="question-label">Question 6</div>
+    <div class="question-text">Q: What does the term <strong>elasticity</strong> mean in relation to materials?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S5 Q7 -->
+  <div class="question-block">
+    <div class="question-label">Question 7</div>
+    <div class="question-text">Q: What does the term <strong>ductility</strong> mean in relation to materials?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S5 Q8 -->
+  <div class="question-block">
+    <div class="question-label">Question 8</div>
+    <div class="question-text">Q: Give <strong>one</strong> example of the use of a material that has good elasticity properties.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S5 Q9 -->
+  <div class="question-block">
+    <div class="question-label">Question 9</div>
+    <div class="question-text">Q: Give <strong>one</strong> example of the use of a material that has good ductility properties.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S5 Q10 -->
+  <div class="question-block">
+    <div class="question-label">Question 10</div>
+    <div class="question-text">Q: What does the term <strong>toughness</strong> mean in relation to materials?</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- S5 Q11 -->
+  <div class="question-block">
+    <div class="question-label">Question 11</div>
+    <div class="question-text">Q: Give <strong>one</strong> example of the use of a material that has good toughness properties.</div>
+    <div class="response-label">Record candidate response:</div>
+    <div class="response-area">
+      <textarea class="tracked" rows="4" placeholder="Answer here..."></textarea>
+    </div>
+  </div>
+
+  <!-- Final sign-off block -->
+  <div class="final-block" style="margin-top:28px;">
+    <div class="row">
+      <div class="cell" colspan="3" style="font-weight:bold;font-family:Arial,sans-serif;font-size:13px;">
+        The candidate has successfully answered the above oral short answer questions:
+        <label class="tick-label" style="margin-left:16px;"><input type="checkbox"> Yes</label>
+        <label class="tick-label"><input type="checkbox"> No</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cell label">Print Assessor name</div>
+      <div class="cell" style="flex:2"><input type="text" placeholder=""></div>
+    </div>
+    <div class="row">
+      <div class="cell label">Assessor Signature</div>
+      <div class="cell" style="flex:2"><input type="text" placeholder=""></div>
+      <div class="cell label" style="max-width:80px">Date</div>
+      <div class="cell"><input type="date" style="font-family:Arial,sans-serif;font-size:13px;border:none;outline:none;background:transparent;width:100%;"></div>
+    </div>
+  </div>
+
+  <button class="save-btn" onclick="saveAnswers()">Save my answers (download)</button>
+  <p class="footer-note">City &amp; Guilds Level 2 Diploma and Certificate in Light Vehicle Maintenance and Repair Principles (7290-12/17) V1_0 &nbsp;|&nbsp; Pages 77–96</p>
+
+</div>
+
+<script>
+var canvas = document.getElementById('ohmCanvas');
+var ctx = canvas.getContext('2d');
+var drawing = false;
+ctx.strokeStyle = '#222';
+ctx.lineWidth = 2;
+ctx.lineCap = 'round';
+
+function getPos(e) {
+  var r = canvas.getBoundingClientRect();
+  var scaleX = canvas.width / r.width;
+  var scaleY = canvas.height / r.height;
+  if (e.touches) {
+    return { x: (e.touches[0].clientX - r.left) * scaleX, y: (e.touches[0].clientY - r.top) * scaleY };
+  }
+  return { x: (e.clientX - r.left) * scaleX, y: (e.clientY - r.top) * scaleY };
+}
+
+canvas.addEventListener('mousedown', function(e) { drawing = true; var p = getPos(e); ctx.beginPath(); ctx.moveTo(p.x, p.y); });
+canvas.addEventListener('mousemove', function(e) { if (!drawing) return; var p = getPos(e); ctx.lineTo(p.x, p.y); ctx.stroke(); });
+canvas.addEventListener('mouseup', function() { drawing = false; });
+canvas.addEventListener('mouseleave', function() { drawing = false; });
+canvas.addEventListener('touchstart', function(e) { e.preventDefault(); drawing = true; var p = getPos(e); ctx.beginPath(); ctx.moveTo(p.x, p.y); }, {passive:false});
+canvas.addEventListener('touchmove', function(e) { e.preventDefault(); if (!drawing) return; var p = getPos(e); ctx.lineTo(p.x, p.y); ctx.stroke(); }, {passive:false});
+canvas.addEventListener('touchend', function() { drawing = false; });
+
+function clearCanvas() { ctx.clearRect(0, 0, canvas.width, canvas.height); }
+
+var tracked = document.querySelectorAll('.tracked, textarea');
+var total = tracked.length;
+
+function updateProgress() {
+  var answered = 0;
+  tracked.forEach(function(el) {
+    if (el.tagName === 'TEXTAREA' || el.type === 'text' || el.type === 'date') {
+      if (el.value.trim().length > 0) answered++;
+    }
+  });
+  var pct = Math.round((answered / total) * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = answered + ' / ' + total + ' answered';
+}
+
+tracked.forEach(function(el) { el.addEventListener('input', updateProgress); });
+updateProgress();
+
+document.querySelectorAll('textarea').forEach(function(ta) {
+  ta.addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+  });
+});
+
+function saveAnswers() {
+  var data = {};
+  tracked.forEach(function(el, i) {
+    var label = el.closest('.question-block') ? el.closest('.question-block').querySelector('.question-label').textContent : 'Cover';
+    data[(label + ' field ' + (i+1))] = el.value;
+  });
+  var blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = '7290-054_SAQ_answers.json';
+  a.click();
+}
+</script>
+</body>
+</html>
